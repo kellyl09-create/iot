@@ -1,4 +1,5 @@
-ESP8266_IoT.initWIFI(SerialPin.P8, SerialPin.P12, BaudRate.BaudRate115200)
+let value_of_water_level_0100_at_pin = 0
 basic.forever(function () {
-    music.play(music.stringPlayable("E C A D G - D - ", 120), music.PlaybackMode.UntilDone)
+    value_of_water_level_0100_at_pin = 1
+    value_of_water_level_0100_at_pin = 2
 })
