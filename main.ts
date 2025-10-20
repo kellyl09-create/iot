@@ -1,5 +1,17 @@
-let value_of_water_level_0100_at_pin = 0
+let water_level = 0
+let soil_moisture = 0
 basic.forever(function () {
-    value_of_water_level_0100_at_pin = 1
-    value_of_water_level_0100_at_pin = 2
+    water_level = 0
+    soil_moisture = 0
+    led.plotBarGraph(
+    water_level,
+    100
+    )
+    if (soil_moisture < 30) {
+        pins.servoWritePin(AnalogPin.P9, 180)
+        basic.pause(500)
+    } else {
+        pins.servoWritePin(AnalogPin.P9, 0)
+        basic.pause(500)
+    }
 })
