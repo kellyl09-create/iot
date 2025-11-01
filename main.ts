@@ -11,7 +11,7 @@ basic.forever(function () {
         pins.servoWritePin(AnalogPin.P9, 180)
         basic.pause(500)
     } else {
-        pins.servoWritePin(AnalogPin.P9, 0)
+        pins.servoWritePin(AnalogPin.P9, 91)
         basic.pause(500)
     }
 })
